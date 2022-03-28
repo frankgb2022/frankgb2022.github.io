@@ -83,5 +83,6 @@ function resetgame()
 	btn1.disabled = false;
 	mydivbox.removeChild(resetbtn);
 	random_num = Math.floor(Math.random()*100)+1;
+    unumber.focus();
 }
 // 猜数定游戏完整版-----------------------
