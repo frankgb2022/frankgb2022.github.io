@@ -1,5 +1,5 @@
 // 猜数定游戏完整版-----------------------
-let random_num = Math.floor(Math.random()*100)+1;
+let random_num = Math.floor(Math.random()*100)+1;//如果把random_num设为const，在重新开始后就会出错。!
 // alert(random_num)
 const unumber = document.querySelector('#unumber');
 const pls = document.querySelector('#pls');
@@ -83,6 +83,7 @@ function resetgame()
 	btn1.disabled = false;
 	mydivbox.removeChild(resetbtn);
 	random_num = Math.floor(Math.random()*100)+1;
+    // alert(random_num)
     unumber.focus();
 }
 // 猜数定游戏完整版-----------------------
